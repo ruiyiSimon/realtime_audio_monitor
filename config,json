@@ -1,0 +1,23 @@
+{
+  "audio": {
+    "sample_rate": 44100,
+    "block_size": 2048,
+    "channels": 1
+  },
+  "filter": {
+    "moving_average_window": 5
+  },
+  "detection": {
+    "rms_threshold": 0.05,
+    "band_energy": {
+      "enabled": false,
+      "freq_low": 20,
+      "freq_high": 200,
+      "ratio_threshold": 0.3
+    }
+  },
+  "log": {
+    "dir": "logs",
+    "file": "events.csv"
+  }
+}
